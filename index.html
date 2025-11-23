@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدرسة التوفيق | الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="./assets/logo.jpeg" alt="شعار مدرسة التوفيق">
+                </div>
+                <div class="logo-text">
+                    <h1>مدرسة التوفيق</h1>
+                    <span>الثانوية بنين</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="news.html"><i class="fas fa-newspaper"></i> الأخبار والفعاليات</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> من نحن</a></li>
+                <li><a href="#contact" class="nav-btn"><i class="fas fa-envelope"></i> تواصل معنا</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="القائمة">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- قسم الترحيب -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <h1>مرحباً بكم في <span class="highlight">مدرسة التوفيق</span> الثانوية بنين</h1>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                    تواصل معنا
+                </a>
+                <a href="#about" class="btn btn-outline">
+                    <i class="fas fa-play-circle"></i>
+                    اكتشف المزيد
+                </a>
+            </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- قسم عن المدرسة -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle"><i class="fas fa-school"></i> تعرف علينا</span>
+                <h2 class="section-title">عن مدرستنا</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="./assets/imageOne.jpeg" alt="صورة المدرسة">
+                        <div class="experience-badge">
+                            <span class="years">8</span>
+                            <span class="text">اعوام من التميز</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>رؤيتنا للتعليم المتميز</h3>
+                    <p>تأسست مدرسة التوفيق لتكون منارة علمية تربوية متميزة. نقدم تعليماً عالي الجودة، مع التركيز على تنمية شخصية الطالب وقدراته الإبداعية.</p>
+                    <p>نسعى لتخريج طلاب متميزين أكاديمياً وأخلاقياً، قادرين على مواجهة تحديات المستقبل بثقة وكفاءة.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>مناهج تعليمية متطورة</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>بيئة تعليمية محفزة</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>أنشطة لامنهجية متنوعة</span>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i>
+                        المزيد عن المدرسة
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المميزات -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle"><i class="fas fa-star"></i> لماذا نحن</span>
+                <h2 class="section-title">مميزاتنا</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>مناهج متطورة</h3>
+                    <p>مناهج تعليمية حديثة تواكب أحدث المعايير العالمية وتُعدّ الطالب للمستقبل</p>
+                    <div class="feature-hover"></div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>كادر تعليمي متميز</h3>
+                    <p>معلمون ذوو خبرة وكفاءة عالية في مختلف التخصصات الأكاديمية</p>
+                    <div class="feature-hover"></div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>بيئة تعليمية آمنة</h3>
+                    <p>مرافق حديثة ومجهزة بأعلى معايير السلامة والأمان لراحة أبنائنا</p>
+                    <div class="feature-hover"></div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>تقنيات حديثة</h3>
+                    <p>فصول ذكية ومختبرات مجهزة بأحدث التقنيات التعليمية</p>
+                    <div class="feature-hover"></div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>أنشطة متنوعة</h3>
+                    <p>برامج رياضية وثقافية وفنية تنمي مواهب الطلاب المختلفة</p>
+                    <div class="feature-hover"></div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>لغات متعددة</h3>
+                    <p>تدريس اللغة العربية والإنجليزية والفرنسية بأساليب احترافية</p>
+                    <div class="feature-hover"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الصور -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle"><i class="fas fa-images"></i> معرض الصور</span>
+                <h2 class="section-title">لمحات من مدرستنا</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="./assets/المبني.jpeg" alt="مبنى المدرسة">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand"></i>
+                            <span>مبنى المدرسة</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/المكتبة.jpeg" alt="المكتبة">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand"></i>
+                            <span>المكتبة</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/الفصول.jpeg" alt="الفصول الدراسية">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand"></i>
+                            <span>الفصول الدراسية</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/الملاعب.jpeg" alt="الملاعب">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand"></i>
+                            <span>الملاعب الرياضية</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-subtitle"><i class="fas fa-headset"></i> تواصل معنا</span>
+                <h2 class="section-title">نحن هنا لمساعدتك</h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>معلومات التواصل</h3>
+                    <p class="contact-desc">يسعدنا تواصلكم معنا للاستفسار عن التسجيل أو أي معلومات أخرى</p>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>العنوان</h4>
+                                <p>شارع مجمع المدارس ، الفيوم<br>مصر </p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>الهاتف</h4>
+                                <p>+01234567891</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>البريد الإلكتروني</h4>
+                                <p>info@altawfiq-school.edu.eg</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>ساعات العمل</h4>
+                                <p>الأحد - الخميس<br>7:00 ص - 3:00 م</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <h3><i class="fas fa-paper-plane"></i> أرسل استفسارك</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> الاسم الكامل</label>
+                            <input type="text" id="name" placeholder="أدخل اسمك الكامل" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
+                            <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone"><i class="fas fa-phone"></i> رقم الهاتف</label>
+                            <input type="tel" id="phone" placeholder="أدخل رقم هاتفك">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject"><i class="fas fa-tag"></i> الموضوع</label>
+                            <select id="subject">
+                                <option value="">اختر الموضوع</option>
+                                <option value="registration">التسجيل والقبول</option>
+                                <option value="fees">الرسوم الدراسية</option>
+                                <option value="activities">الأنشطة والبرامج</option>
+                                <option value="other">استفسار آخر</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment-alt"></i> رسالتك</label>
+                        <textarea id="message" placeholder="اكتب رسالتك هنا..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i>
+                        إرسال الرسالة
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path d="M0,50 C150,100 350,0 500,50 C650,100 800,0 1000,50 C1150,100 1300,0 1440,50 L1440,100 L0,100 Z"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <img src="./assets/logo.jpeg" alt="شعار مدرسة التوفيق">
+                        <h3>مدرسة التوفيق الثانوية</h3>
+                    </div>
+                    <p>نسعى لتقديم تعليم متميز يبني جيلاً واعياً قادراً على المنافسة عالمياً وخدمة وطنه ومجتمعه.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                        <li><a href="news.html"><i class="fas fa-chevron-left"></i> الأخبار</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-left"></i> من نحن</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-left"></i> تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-graduation-cap"></i> المراحل الدراسية</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> المرحلة الثانوية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-map-marked-alt"></i> موقعنا</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> شارع مجمع المدارس ، الفيوم</p>
+                        <p><i class="fas fa-phone-alt"></i> +01234567891</p>
+                        <p><i class="fas fa-envelope"></i> info@altawfiq-school.edu.eg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 مدرسة التوفيق . جميع الحقوق محفوظة | تصميم وتطوير <a href="about.html">saif el-eslam</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

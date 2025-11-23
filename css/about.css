@@ -1,0 +1,288 @@
+/* ===== قسم القصة ===== */
+.story-section {
+    padding: 12rem 0;
+    background: var(--lighter);
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.story-text p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.story-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.story-stat {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--light);
+    padding: 20px;
+    border-radius: var(--radius-lg);
+    border: 2px solid rgba(5, 191, 219, 0.1);
+    transition: var(--transition);
+}
+
+.story-stat:hover {
+    border-color: var(--secondary);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.story-stat i {
+    font-size: 2rem;
+    color: var(--secondary);
+}
+
+.story-stat div {
+    text-align: right;
+}
+
+.story-stat strong {
+    width: 15rem;
+    display: block;
+    font-size: 1rem;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.story-stat span {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* كولاج الصور */
+.image-collage {
+    position: relative;
+    height: 500px;
+}
+
+.collage-main {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    z-index: 2;
+}
+
+.collage-small-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 5px solid var(--lighter);
+    z-index: 3;
+}
+
+.collage-small-2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 40%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 5px solid var(--lighter);
+    z-index: 1;
+}
+
+/* ===== قسم المبرمج ===== */
+.developer-section {
+    padding: 100px 0;
+    background: var(--light);
+}
+
+.developer-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--lighter);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 50px;
+    align-items: center;
+    border: 2px solid rgba(5, 191, 219, 0.1);
+}
+
+.developer-avatar {
+    position: relative;
+}
+
+.developer-avatar img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.developer-badge {
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-secondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    border: 4px solid var(--lighter);
+}
+
+.developer-badge i {
+    font-size: 1.5rem;
+    color: var(--dark);
+}
+
+.developer-info h3 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.developer-title {
+    color: var(--secondary);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.developer-bio {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.developer-contact {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.dev-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--gradient-primary);
+    color: white;
+    padding: 12px 24px;
+    border-radius: var(--radius-xl);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+.dev-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.developer-social {
+    display: flex;
+    gap: 12px;
+}
+
+.social-btn {
+    width: 45px;
+    height: 45px;
+    background: var(--light);
+    color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    border: 2px solid rgba(5, 191, 219, 0.2);
+}
+
+.social-btn:hover {
+    background: var(--gradient-secondary);
+    color: var(--dark);
+    transform: translateY(-5px);
+    border-color: transparent;
+}
+
+/* ===== التجاوب ===== */
+@media (max-width: 992px) {
+    .story-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .image-collage {
+        height: 400px;
+    }
+    
+    .developer-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .developer-avatar {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    .developer-contact,
+    .developer-social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .story-section {
+        padding: 6rem 0;
+    }
+
+    .developer-section {
+        padding: 60px 0;
+    }
+    
+    .developer-card {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .collage-main,
+    .collage-small-1,
+    .collage-small-2 {
+        position: static;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+    
+    .image-collage {
+        height: auto;
+    }
+}

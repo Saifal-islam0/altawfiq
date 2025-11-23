@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدرسة التوفيق | الأخبار والفعاليات</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/news.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="./assets/logo.jpeg" alt="شعار مدرسة التوفيق">
+                </div>
+                <div class="logo-text">
+                    <h1>مدرسة التوفيق</h1>
+                    <span>الثانوية بنين</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="news.html" class="active"><i class="fas fa-newspaper"></i> الأخبار والفعاليات</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> من نحن</a></li>
+                <li><a href="index.html#contact" class="nav-btn"><i class="fas fa-envelope"></i> تواصل معنا</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="القائمة">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- رأس الصفحة -->
+    <header class="page-header">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <div class="breadcrumb">
+                <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+                <i class="fas fa-chevron-left"></i>
+                <span>الأخبار والفعاليات</span>
+            </div>
+            <h1><i class="fas fa-newspaper"></i> الأخبار والفعاليات</h1>
+            <p>تابع آخر أخبار المدرسة والفعاليات والأنشطة المميزة</p>
+        </div>
+    </header>
+
+    <!-- قسم التصفية -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-wrapper">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">
+                        <i class="fas fa-th-large"></i> الكل
+                    </button>
+                    <button class="filter-tab" data-filter="news">
+                        <i class="fas fa-newspaper"></i> أخبار
+                    </button>
+                    <button class="filter-tab" data-filter="events">
+                        <i class="fas fa-calendar-alt"></i> فعاليات
+                    </button>
+                    <button class="filter-tab" data-filter="achievements">
+                        <i class="fas fa-trophy"></i> إنجازات
+                    </button>
+                    <button class="filter-tab" data-filter="activities">
+                        <i class="fas fa-running"></i> أنشطة
+                    </button>
+                </div>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="ابحث في الأخبار...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الأخبار المميزة -->
+    <section class="featured-news">
+        <div class="container">
+            <div class="featured-grid">
+                <article class="featured-card main" data-category="news">
+                    <div class="featured-image">
+                        <img src="./assets/جدواول الامتحانات.jpeg" alt="جدول الامتحانات">
+                        <div class="featured-badge">
+                            <i class="fas fa-star"></i> مميز
+                        </div>
+                        <div class="featured-category">
+                            <i class="fas fa-calendar-alt"></i>الاخبار
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <div class="featured-meta">
+                            <span><i class="fas fa-calendar"></i> 23 نوفمبر 2025</span>
+                            <span><i class="fas fa-eye"></i> 250 مشاهدة</span>
+                        </div>
+                        <h2>جدول سير امتحانات شهر نوفمبر </h2>
+                        <p>تم الاعلان عن جداول امتحانات الصف الاول و الثاني الثانوي (شهر نوفمبر ) الفصل الاول<p>
+                        <a href="#" class="read-more">
+                            اقرأ المزيد <i class="fas fa-arrow-left"></i>
+                        </a>
+                    </div>
+                </article>
+                <div class="featured-side">
+                    <article class="featured-card small" data-category="achievements">
+                        <div class="featured-image">
+                            <img src="./assets/انجازات.jpeg" alt="مسابقة اوئل الطلبة">
+                            <div class="featured-category">
+                                <i class="fas fa-trophy"></i> إنجازات
+                            </div>
+                        </div>
+                        <div class="featured-content">
+                            <div class="featured-meta">
+                                <span><i class="fas fa-calendar"></i> 22 نوفمبر 2025</span>
+                            </div>
+                            <h3>طلابنا يحصدون المركز الثاني في مسابقة اوئل الطلبة</h3>
+                            <a href="#" class="read-more">
+                                اقرأ المزيد <i class="fas fa-arrow-left"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="featured-card small" data-category="events">
+                        <div class="featured-image">
+                            <img src="./assets/فعاليات.jpeg" alt="دوري المكاتب">
+                            <div class="featured-category">
+                                <i class="fas fa-newspaper"></i>فعاليات
+                            </div>
+                        </div>
+                        <div class="featured-content">
+                            <div class="featured-meta">
+                                <span><i class="fas fa-calendar"></i> 22 نوفمبر 2025</span>
+                            </div>
+                            <h3>مشاركة المدرسة في فعاليات دوري المكاتب التنفيذية</h3>
+                            <a href="#" class="read-more">
+                                اقرأ المزيد <i class="fas fa-arrow-left"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path d="M0,50 C150,100 350,0 500,50 C650,100 800,0 1000,50 C1150,100 1300,0 1440,50 L1440,100 L0,100 Z"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <img src="./assets/logo.jpeg" alt="شعار مدرسة التوفيق">
+                        <h3>مدرسة التوفيق الثانوية</h3>
+                    </div>
+                    <p>نسعى لتقديم تعليم متميز يبني جيلاً واعياً قادراً على المنافسة عالمياً وخدمة وطنه ومجتمعه.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                        <li><a href="news.html"><i class="fas fa-chevron-left"></i> الأخبار</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-left"></i> من نحن</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-left"></i> تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-graduation-cap"></i> المراحل الدراسية</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> المرحلة الثانوية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-map-marked-alt"></i> موقعنا</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> شارع مجمع المدارس ، الفيوم</p>
+                        <p><i class="fas fa-phone-alt"></i> +01234567891</p>
+                        <p><i class="fas fa-envelope"></i> info@altawfiq-school.edu.eg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 مدرسة التوفيق . جميع الحقوق محفوظة | تصميم وتطوير <a href="about.html">saif el-eslam</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- زر العودة للأعلى -->
+    <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/news.js"></script>
+</body>
+</html>
