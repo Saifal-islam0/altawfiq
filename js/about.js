@@ -39,30 +39,6 @@ if (developerCard) {
     devObserver.observe(developerCard);
 }
 
-// ===== تفاعل أزرار التواصل =====
-const devButtons = document.querySelectorAll('.dev-btn, .social-btn');
-devButtons.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        const isEmail = btn.href?.includes('mailto:');
-        const isTel = btn.href?.includes('tel:');
-        const isSocial = btn.classList.contains('social-btn');
-        
-        if (isEmail) {
-            showNotification('فتح البريد الإلكتروني...', 'info');
-        } else if (isTel) {
-            showNotification('الاتصال...', 'info');
-        } else if (isSocial) {
-            e.preventDefault();
-            const iconClasses = btn.querySelector('i').classList;
-            const platform = iconClasses.contains('fa-github') ? 'GitHub' :
-                           iconClasses.contains('fa-linkedin') ? 'LinkedIn' :
-                           iconClasses.contains('fa-twitter') ? 'Twitter' :
-                           iconClasses.contains('fa-facebook') ? 'Facebook' : 'الموقع';
-            showNotification(`فتح ${platform}...`, 'info');
-        }
-    });
-});
-
 // ===== نسخ معلومات التواصل عند النقر المزدوج =====
 const contactInfo = document.querySelectorAll('.developer-contact .dev-btn');
 contactInfo.forEach(btn => {

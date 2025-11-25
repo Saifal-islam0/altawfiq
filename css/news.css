@@ -80,7 +80,6 @@
     background: var(--lighter);
     padding: 30px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    position: sticky;
     top: 74px;
     z-index: 100;
     box-shadow: var(--shadow-sm);
